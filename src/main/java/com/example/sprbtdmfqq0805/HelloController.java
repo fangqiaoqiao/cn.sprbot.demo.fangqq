@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     @RequestMapping("/hello")
+
     public String hello() {
+        System.out.print("Hello Spring Boot!");
+        System.out.print("Hello Spring Boot!");
         return "Hello Spring Boot!";
     }
 
