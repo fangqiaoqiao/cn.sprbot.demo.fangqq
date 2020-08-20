@@ -1,2 +1,16 @@
+# 服务端口号
 server:
-  port: 8085
+  port: 8001
+
+spring:
+  datasource: # 数据库配置
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:19071:crma
+    username: DBCUSTOPR
+    password: jwu7fCnx
+
+mybatis:
+  # 指定别名设置的包为所有entity
+  type-aliases-package: com.example.entity
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰命名规范
